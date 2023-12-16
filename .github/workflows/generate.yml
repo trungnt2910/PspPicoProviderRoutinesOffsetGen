@@ -1,0 +1,61 @@
+name: Generate Offsets
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore previous dist
+      continue-on-error: true
+      run: |
+        git fetch origin dist
+        git restore --source origin/dist -- picooffsets.json
+      shell: cmd
+
+    - name: Generate offsets
+      run: dotnet run --project ./PspPicoProviderRoutinesOffsetGen/PspPicoProviderRoutinesOffsetGen.csproj --framework net8.0
+
+    - name: Publish artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: picooffsets
+        path: picooffsets.*
+
+    - name: Prepare dist branch
+      run: |
+        mkdir dist
+        move picooffsets.* dist
+        powershell -Command "& {Push-Location dist;  Get-ChildItem -File -Recurse . | Resolve-Path -Relative}" > dist.txt
+        git checkout --orphan dist
+        git reset
+        git pull origin dist
+        xcopy /E /H /R /Y dist\* .
+        for /F "tokens=*" %%A in (dist.txt) do git add %%A
+        echo %DATE% %TIME% > .timestamp
+        git add .timestamp
+        git config --local user.email "actions@github.com"
+        git config --local user.name "Github Actions"
+        git commit -m "dist: ${{ github.sha }} - %DATE% %TIME%"
+      shell: cmd
+
+    - name: Push
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ github.token }}
+        branch: dist

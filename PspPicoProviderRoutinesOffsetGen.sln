@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PspPicoProviderRoutinesOffsetGen", "PspPicoProviderRoutinesOffsetGen\PspPicoProviderRoutinesOffsetGen.csproj", "{290E7A22-40B6-4618-90FA-0296510F4C2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AF2C1266-AD31-4B80-ADE4-C2C8536D9A84}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Debug|x64.Build.0 = Debug|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Debug|x86.Build.0 = Debug|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Release|x64.ActiveCfg = Release|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Release|x64.Build.0 = Release|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Release|x86.ActiveCfg = Release|Any CPU
+		{290E7A22-40B6-4618-90FA-0296510F4C2D}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E97EA6C-F425-40E3-B7AB-458F753350D4}
+	EndGlobalSection
+EndGlobal
