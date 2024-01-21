@@ -423,7 +423,7 @@ headerCodeWriter.WriteLine(
 }} MA_PSP_PICO_PROVIDER_ROUTINES_OFFSETS, *PMA_PSP_PICO_PROVIDER_ROUTINES_OFFSETS;
 
 extern const MA_PSP_PICO_PROVIDER_ROUTINES_OFFSETS MaPspPicoProviderRoutinesOffsets[{0}];
-", totalIndexSize);
+", result.Count);
 
 var headerCode = headerCodeWriter.ToString();
 
@@ -475,4 +475,5 @@ Console.WriteLine($"Failed (invalid):       {totalFailInvalid} entries.");
 Console.WriteLine($"Unchanged/Duplicate:    {totalOldSame} entries.");
 Console.WriteLine($"Updated:                {totalOldDifferent} entries.");
 Console.WriteLine($"Added:                  {totalNew} entries.");
+Console.WriteLine($"Actual:                 {result.Count} entries.");
 Console.WriteLine();
