@@ -25144,5 +25144,45 @@ extern const MA_PSP_PICO_PROVIDER_ROUTINES_OFFSETS MaPspPicoProviderRoutinesOffs
             .PspTerminatePicoProcess = 0x66D370,
         },
     },
+    {
+        .Version = "10.0.26063.1",
+        .Architecture = "x64",
+        .Offsets =
+        {
+            .PspPicoRegistrationDisabled = 0xF04960,
+            .PspPicoProviderRoutines = 0xF04980,
+            .PspCreatePicoProcess = 0x7331B0,
+            .PspCreatePicoThread = 0xA50860,
+            .PspGetPicoProcessContext = 0xA59810,
+            .PspGetPicoThreadContext = 0xA56490,
+            .PspPicoGetContextThreadEx = 0x733420,
+            .PspPicoSetContextThreadEx = 0x733450,
+            .PspTerminateThreadByPointer = 0x97CC10,
+            .PsResumeThread = 0x9EF420,
+            .PspSetPicoThreadDescriptorBase = 0x457570,
+            .PsSuspendThread = 0x8ED3A0,
+            .PspTerminatePicoProcess = 0x733510,
+        },
+    },
+    {
+        .Version = "10.0.26058.1300",
+        .Architecture = "x64",
+        .Offsets =
+        {
+            .PspPicoRegistrationDisabled = 0xF04A38,
+            .PspPicoProviderRoutines = 0xF04A60,
+            .PspCreatePicoProcess = 0x732140,
+            .PspCreatePicoThread = 0xA4EBC0,
+            .PspGetPicoProcessContext = 0xA57B70,
+            .PspGetPicoThreadContext = 0xA547F0,
+            .PspPicoGetContextThreadEx = 0x7323B0,
+            .PspPicoSetContextThreadEx = 0x7323E0,
+            .PspTerminateThreadByPointer = 0x975C20,
+            .PsResumeThread = 0x9EFC30,
+            .PspSetPicoThreadDescriptorBase = 0x459010,
+            .PsSuspendThread = 0x8E99B0,
+            .PspTerminatePicoProcess = 0x7324A0,
+        },
+    },
 };
 
