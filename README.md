@@ -41,7 +41,7 @@ sins. Fork this repo and dispatch a `Generate Offsets` workflow or run it in a C
 
 ## Community
 
-Need help using this project? Join me on [Discord](https://discord.gg/bcV3gXGtsJ) and find a
+Need help using this project? Join me on [Discord][1] and find a
 solution together.
 
 ## Acknowledgements
