@@ -1,7 +1,7 @@
 # PspPicoProviderRoutinesOffsetGen
 
-[![Discord Invite](https://dcbadge.vercel.app/api/server/bcV3gXGtsJ?style=flat)](https://discord.gg/bcV3gXGtsJ)&nbsp;
-[![Generate Offsets](https://github.com/trungnt2910/PspPicoProviderRoutinesOffsetGen/actions/workflows/generate.yml/badge.svg)](https://github.com/trungnt2910/PspPicoProviderRoutinesOffsetGen/actions/workflows/generate.yml)
+[![Discord Invite][2]][1]&nbsp;
+[![Generate Offsets][3]][4]
 
 Offsets from `ntosknrl.exe` that are useful for Pico providers.
 
@@ -56,3 +56,8 @@ to obtain symbols from PDBs.
 database of known Windows builds and binaries.
 - Microsoft for not just exporting those fkn' symbols and forcing me to write this in the first
 place.
+
+[1]: https://reality.trungnt2910.com/discord/lxmonika
+[2]: https://img.shields.io/discord/1185622479436251227?logo=discord&logoColor=white&label=Discord&labelColor=%235865F2
+[3]: https://github.com/trungnt2910/PspPicoProviderRoutinesOffsetGen/actions/workflows/generate.yml/badge.svg
+[4]: https://github.com/trungnt2910/PspPicoProviderRoutinesOffsetGen/actions/workflows/generate.yml
